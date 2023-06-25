@@ -134,3 +134,9 @@ buildNumber.properties
 .classpath
 src/frontend/node_modules
 # End of https://www.toptal.com/developers/gitignore/api/maven,intellij
+/.idea/CharityChampion.iml
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/vcs.xml
