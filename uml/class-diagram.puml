@@ -1,0 +1,32 @@
+@startuml
+
+class Project {
+  - String id
+  - String title
+  - String imageSrc
+  - Text Description
+  - String Type
+  - Double neededAmount
+  - Double paidAmount
+  - String status
+  - Date creationAt
+  - Date updatedAt
+  void getters()
+  void setters()
+}
+
+class User {
+  - String id
+  - String fullname
+  - String username
+  - String password
+  - String role
+  - String status
+  - Date creationAt
+  - Date updatedAt
+  void getters()
+  void setters()
+}
+
+User "many" *--* "many" Project : contributes
+@enduml
