@@ -1,0 +1,65 @@
+	
+@startuml
+left to right direction
+actor "User" as user
+actor "Admin" as admin
+actor "System" as system
+
+user <|-- admin
+
+rectangle {
+  usecase "Add new projects" as p1
+  usecase "Update projects" as p2
+  usecase "Delete projects" as p3
+  usecase "View projects list " as p4
+  usecase "View project history" as p5
+  usecase "Add new admins" as ad1
+  usecase "Update admins information" as ad2
+  usecase "Delete admins" as ad3
+  usecase "View admins list" as ad4
+  usecase "View admins activity" as ad5
+}
+
+rectangle {
+  usecase "View projects" as contr1
+  usecase "Filter / Search projects" as contr2
+  usecase "Contribute to a project" as contr3
+  usecase "Suggest a new project" as contr3
+  usecase "Contact admins" as contr9
+
+  usecase "Create new account" as contr4
+  usecase "Update his account" as contr5
+  usecase "Delete his account" as contr6
+  usecase "Manage his preferences" as contr7
+  usecase "Share a project" as contr8
+  usecase "View notifications" as contr10
+}
+
+rectangle {
+  usecase "Send notifications" as sys1
+}
+
+admin --> p1
+admin --> p2
+admin --> p3
+admin --> p4
+admin --> p5
+admin --> ad1
+admin --> ad2
+admin --> ad3
+admin --> ad4
+admin --> ad5
+
+user --> contr1
+user --> contr2
+user --> contr3
+user --> contr4
+user --> contr5
+user --> contr6
+user --> contr7
+user --> contr8
+user --> contr9
+user --> contr10
+
+system --> sys1
+@enduml
