@@ -140,3 +140,5 @@ src/frontend/node_modules
 /.idea/jarRepositories.xml
 /.idea/misc.xml
 /.idea/vcs.xml
+/.env
+/my-db
