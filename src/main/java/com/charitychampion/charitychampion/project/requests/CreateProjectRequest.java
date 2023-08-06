@@ -4,6 +4,7 @@ import com.charitychampion.charitychampion.project.enums.EProjectStatus;
 import com.charitychampion.charitychampion.project.enums.EProjectType;
 import jakarta.validation.constraints.NotBlank;
 
+
 public class CreateProjectRequest {
     @NotBlank
     public String title;
