@@ -1,4 +1,4 @@
-package com.charitychampion.charitychampion.project.configuration;
+/*package com.charitychampion.charitychampion.security.configuration;
 
 import org.hibernate.query.sqm.mutation.internal.cte.CteInsertStrategy;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-public class SpringSecurityConfig{
+public class SpringSecurityConfig {
 
 
     @Bean
@@ -45,3 +45,4 @@ public class SpringSecurityConfig{
     }
 
 }
+*/
