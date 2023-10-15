@@ -142,3 +142,6 @@ src/frontend/node_modules
 /.idea/vcs.xml
 /.env
 /my-db
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
