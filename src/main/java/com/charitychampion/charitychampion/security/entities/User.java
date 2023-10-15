@@ -32,6 +32,12 @@ public class User extends BaseEntity implements UserDetails {
     @Enumerated(EnumType.STRING)
     private EStatus status = EStatus.ENABLED;
 
+
+    public User(User user){
+        username = user.getUsername();
+        password = user.getPassword();
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(this.role.name()));
@@ -55,5 +61,14 @@ public class User extends BaseEntity implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    @Override
+    public String getUsername() {
+        return this.username;
+    }
+    @Override
+    public String getPassword() {
+        return this.password;
     }
 }
